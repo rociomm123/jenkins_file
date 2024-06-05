@@ -5,7 +5,7 @@ pipeline {
         stage('Run YML Script') {
             steps {
                 // Run the Kubernetes deployment script directly from the URL
-                sh 'kubectl create -f https://raw.githubusercontent.com/rociomm123/jenkins_file/main/Kubernetes_project/kube-project.yml'
+                sh 'https://raw.githubusercontent.com/rociomm123/jenkins_file/main/kube-project.yml'
             }
         }
 
